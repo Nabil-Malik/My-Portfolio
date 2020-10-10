@@ -1,12 +1,12 @@
 {
-  "name": "my-portfolio",
+  "name": "nabil-malik-portfolio",
   "version": "0.0.1",
   "private": true,
   "scripts": {
     "start": "node ./server.js"
   },
   "engines": {
-    "node": "^12.00.0",
+    "node": "^10.00.0",
     "npm": "^6.0.0"
   },
   "dependencies": {
