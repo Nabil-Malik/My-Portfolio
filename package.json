@@ -1,10 +1,13 @@
-
 {
   "name": "my-portfolio",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "private": true,
   "scripts": {
     "start": "node ./server.js"
+  },
+  "engines": {
+    "node": "^12.00.0",
+    "npm": "^6.0.0"
   },
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.15.1",
@@ -13,9 +16,22 @@
     "debug": "~2.6.9",
     "ejs": "~2.6.1",
     "express": "~4.16.1",
-    "http-errors": "~1.6.3",  
+    "http-errors": "~1.6.3",
     "jquery": "^3.5.1",
     "morgan": "~1.9.1",
     "popper.js": "^1.16.1"
-  }
+  },
+  "description": "Nabil Malik Portfolio",
+  "main": "app.js",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Nabil-Malik/My-Portfolio.git"
+  },
+  "author": "Nabil Malik",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Nabil-Malik/My-Portfolio/issues"
+  },
+  "homepage": "https://github.com/Nabil-Malik/My-Portfolio#readme"
 }
