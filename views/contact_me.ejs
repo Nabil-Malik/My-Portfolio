@@ -1,0 +1,42 @@
+<!--File  Name: contact_me.ejs
+    Student Name: Nabil Malik
+    Id: 301108920
+    Date: 9 Oct 20-->
+
+
+<%- include partials/header.ejs %>
+<%- include partials/main_nav.ejs %>
+
+
+
+<div class="jumbotron">
+        <h1 class="display-4">Contact Me</h1>
+        <p class="lead">Email me with any questions. I will be happy to answer your question and setup a meeting with you.</p>
+        <hr class="my-4">
+        <form>
+                <div class="form-group">
+                        <label >First Name</label>
+                        <input type="text" class="form-control" id="inputFirstName" aria-describedby="firstName" placeholder="Enter First Name">
+                          </div>    
+                          <div class="form-group">
+                                <label>Last Name</label>
+                                <input type="text" class="form-control" id="inputLastName" aria-describedby="lastName" placeholder="Enter Lasts Name">
+                                  </div>    
+                                  
+            <div class="form-group">
+                  <label>Email address</label>
+                  <input type="email" class="form-control" id="inputEmail1" aria-describedby="email" placeholder="Enter email">
+                  </div>
+                  <div class="form-group">
+                        <label>Message</label>
+                        <input type="text" class="form-control" id="inputMessage" aria-describedby="message" placeholder="Enter message">
+                        </div>
+                
+                        <a class="btn btn-primary btn-lg" href="\" role="button">Send</a>
+        </form>
+      </div>
+
+
+
+<%- include partials/bottom_nav.ejs %>
+<%- include partials/footer.ejs %>
