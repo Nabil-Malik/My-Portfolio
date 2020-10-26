@@ -1,0 +1,47 @@
+<!--File  Name: about_me.ejs
+    Student Name: Nabil Malik
+    Id: 301108920
+    Date: 25 Oct 20-->
+    <%- include ../partials/header.ejs %>
+<%- include ../partials/main_nav.ejs %>
+  
+
+  <!-- Main Content -->
+  <main class="container">
+    <div class="row">
+        <div class="offset-md-2 col-md-10">
+            <h1><%= title %></h1>
+            <br>
+            <table class="table">
+                <!-- Header Row-->
+                <tr class="d-flex">
+                    <th class="text-center col-2">Name</th>
+                    <th class="text-center col-2">Contact Number</th>
+                    <th class="text-center col-3">E-Mail</th>
+                </tr>
+
+                <!-- Repeatable Template Row -->
+
+                <% for(let count = 0; count < ContactList.length; count++) { %>
+                    <tr class="d-flex">
+                        <td class="text-center col-2"><%= ContactList[count].name %></td>
+                        <td class="text-center col-2"><%= ContactList[count].number %></td>
+                        <td class="text-center col-3"><%= ContactList[count].email %></td> 
+                        <td class="text-center col-1">
+                            <a href="/contact-list/edit/<%= ContactList[count]._id %>" class="btn btn-primary btn-sm">Edit</a>
+                        </td>
+                        <td class="text-center col-1">
+                            <a href="/contact-list/delete/<%= ContactList[count]._id %>" class="btn btn-danger btn-sm"> Delete</a>
+                        </td>         
+                    </tr>
+                <% } %>
+            </table>
+        </div>
+    </div>
+  </main>
+  
+<%- include ../partials/bottom_nav.ejs %>  
+
+<%- include ../partials/footer.ejs %>
+  
+
