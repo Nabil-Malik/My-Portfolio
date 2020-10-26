@@ -5,5 +5,6 @@
 
     module.exports =
 {
-    "URI":"mongodb://localhost/myportfolio"
+  //  "URI":"mongodb://localhost/myportfolio"
+    "URI":"mongodb+srv://nabilmaliik:azekmi@cluster0.o4n4f.mongodb.net/myportfolio?retryWrites=true&w=majority"
 }
